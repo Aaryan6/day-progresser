@@ -14,10 +14,10 @@ import {
 
 export default function Home() {
   const [startingDate, setStartingDate] = useState<Date | undefined>(
-    new Date("2024-01-01")
+    new Date(new Date().getFullYear(), 0, 1)
   );
   const [endDate, setEndDate] = useState<Date | undefined>(
-    new Date("2024-12-31")
+    new Date(new Date().getFullYear(), 11, 31)
   );
   const [currentDay, setCurrentDay] = useState<number>(0);
 
